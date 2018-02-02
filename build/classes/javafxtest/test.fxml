@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="javafxtest.TestController">
+    <stylesheets>
+        <URL value="@test.css" />
+    </stylesheets>
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Grid">
+            <items>
+              <MenuItem mnemonicParsing="false" text="16×16" />
+                  <MenuItem mnemonicParsing="false" text="10×10" />
+                  <MenuItem mnemonicParsing="false" text="8×8" />
+                  <MenuItem mnemonicParsing="false" text="3×3" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Color">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Default (The default which is Color.RED / Color.BLACK)" />
+              <MenuItem mnemonicParsing="false" text="Blue (Color.SKYBLUE / Color.DARKBLUE)" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

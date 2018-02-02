@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxtest.TestController">
+    <stylesheets>
+        <URL value="@test.css" />
+    </stylesheets>
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Grid">
+            <items>
+              <MenuItem fx:id="MITEM_NUM16" mnemonicParsing="false" onAction="#handleMenuItem_Num16" text="16×16" />
+                  <MenuItem fx:id="MITEM_NUM10" mnemonicParsing="false" onAction="#handleMenuItem_Num10" text="10×10" />
+                  <MenuItem fx:id="MITEM_NUM8" mnemonicParsing="false" onAction="#handleMenuItem_Num8" text="8×8" />
+                  <MenuItem fx:id="MITEM_NUM3" mnemonicParsing="false" onAction="#handleMenuItem_Num3" text="3×3" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Color">
+            <items>
+                  <MenuItem fx:id="MITEM_COLOR_RED" mnemonicParsing="false" onAction="#handleMenuItem_ColorRed" text="Default (The default which is Color.RED / Color.BLACK)" />
+              <MenuItem fx:id="MITEM_COLOR_BLUE" mnemonicParsing="false" onAction="#handleMenuItem_ColorBluee" text="Blue (Color.SKYBLUE / Color.DARKBLUE)" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
